@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+    <title>Formulário de validação</title>
+</head>
+
+<body>
+
+    <main>
+        <h1>Ficou com dúvida?<span>Nos mande uma mensagem!</span></h1>
+        <p>Caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.
+        </p>
+    </main>
+    <form method="post">
+        <input class="required-field" type="text" name="nome" placeholder="Nome completo *">
+        <p class="required-alert">campo obrigatório</p>
+
+        <input class="required-field" type="text" name="email" placeholder="Email *">
+        <p class="required-alert">campo obrigatório</p>
+
+        <input class="required-field" type="tel" name="telefone" placeholder="Telefone *">
+        <p class="required-alert">campo obrigatório</p>
+
+        <textarea class="required-field" placeholder="Mensagem *"></textarea>
+        <p class="required-alert">campo obrigatório</p>
+
+        <p class="required-message">* Campos obrigatórios</p>
+
+        <button class="btn-submit" id="btn-submit" type="submit">Enviar</button>
+        <button class="btn-reset" id="btn-reset" type="reset">Limpar form</button>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script type="text/javascript" src="./src/scripts/validation.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+body {
+    background-image: url(../images/bg-repeat.jpg);
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    min-height: 100vh;
+    min-width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+main {
+    max-width: 350px;
+    color: #FFF;
+
+    h1 {
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 900;
+        margin-bottom: 11px;
+
+        span {
+            display: block;
+        }
+    }
+
+    p {
+        max-width: 500px;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+}
+
+form {
+    background-color: #FFF;
+    max-width: 340px;
+    min-height: 378px;
+    width: 100%;
+    padding: 20px;
+
+    .required-field {
+        padding: 10px;
+        width: 298px;
+        border-radius: 5px;
+        border: 1px solid black;
+
+        &.fail {
+            border-color: #F52E2E;
+        }
+
+        &.success {
+            border-color: #00C22B;
+        }
+
+        &::placeholder {
+            font-size: 14px;
+        }
+    }
+
+    input.required-field {
+        height: 36px;
+    }
+
+    textarea.required-field {
+        height: 100px;
+        resize: none;
+    }
+
+    .required-alert {
+        font-size: 10px;
+        font-weight: 400px;
+        color: #F52E2E;
+        margin-bottom: 8px;
+        visibility: hidden;
+
+        &.visible {
+            visibility: visible;
+        }
+    }
+
+    .required-message {
+        margin-left: -7px;
+        font-size: 15px;
+    }
+
+    .btn-submit {
+        width: 298px;
+        height: 42px;
+        color: #FFFFFF;
+        background-color: #3CCC87;
+        font-size: 15px;
+        font-weight: 700;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 12px;
+        transition: transform .3s ease-in-out;
+
+        &:hover {
+            background-color: #00C22B;
+        }
+    }
+
+    .btn-reset {
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        margin: 0 auto;
+        display: block;
+        margin-top: 6px;
+        color: gray;
+        transition: .1s ease-in-out;
+
+        &:hover {
+            color: black;
+            text-decoration: underline;
+        }
+    }
+}
