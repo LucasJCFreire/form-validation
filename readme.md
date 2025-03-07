@@ -4,7 +4,7 @@ Este projeto é um exercício proposto pelo curso de Desenvolvimento web full st
 ## Descrição e funcionalidades
 Elaboração de formulário em página da web utilizando HTML e CSS com validação dos campos preenchidos ao clicar no botão "enviar" utilizando JavaScript.
 
-[<img src="./src/images/preview.gif" alt="gif formulario com validacao">](https://lucasjcfreire.github.io/challenges/dev-quest/formulario-com-validacao)
+[<img src="./src/images/preview.gif" alt="gif formulario com validacao">](https://lucasjcfreire.github.io/form-validation/)
 
 ## O que aprendi
 Durante o desenvolvimento deste projeto, pude reforçar e colocar em prática os seguintes conhecimentos:
